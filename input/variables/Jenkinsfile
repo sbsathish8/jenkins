@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    env {
-        greet : "World!"
+    environment {
+        def greet = "World!"
     }
     stages {
         stage ("demo"){
