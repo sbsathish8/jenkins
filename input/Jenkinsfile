@@ -5,8 +5,8 @@ pipeline {
     }
 
     stages {
-        stage {
-            steps("demo"){
+        stage ("demo"){
+            steps{
                 echo "booleanParam is set to : ${myBool}"
             }
         }
