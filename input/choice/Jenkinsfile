@@ -7,7 +7,7 @@ pipeline {
         stage ("demo"){
             steps{
                 echo "Hello World!"
-                echo "Building is ready for '${myChoice}' Environment"
+                echo "Building is ready for \"${myChoice}\" Environment"
             }
         }
     }
