@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    env {
+        greet : "World!"
+    }
+    stages {
+        stage ("demo"){
+            steps{
+                echo "Hello ${greet}"
+                echo "Current build number : ${env.BUILD_NUMBER}"
+            }
+        }
+    }
+}
