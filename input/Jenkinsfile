@@ -1,18 +1,14 @@
 pipeline {
     agent any
     parameters {
-        str(defaultValue:"Hello World!", description: "Greetings", name: "greet")
+        string(defaultValue:"Hello World!", description: "Greetings", name: "greet")
         booleanParam(defaultValue:false, description: "Enable service?", name: "myBool")
     }
 
     stages {
-        stage ("input string"){
-            steps{
-                echo "Hello ${greet}"
-            }
-        }
         stage ("demo"){
             steps{
+                echo("Hello ${greet}")
                 echo "Param for boolean variable is set to : ${myBool}"
             }
         }
