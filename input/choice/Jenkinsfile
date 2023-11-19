@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    parameters {
+        choice(choices:["Test", "Dev", "QA", "Prod"]], description: "Enable service?", name: "myChoice")
+    }
+    stages {
+        stage ("demo"){
+            steps{
+                echo "Hello World!"
+                echo "Building is ready for "${myChoice}" Environment
+            }
+        }
+    }
+}
