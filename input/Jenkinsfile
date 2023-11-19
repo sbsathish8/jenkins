@@ -4,11 +4,10 @@ pipeline {
         string(defaultValue:"Hello World!", description: "Greetings", name: "greet")
         booleanParam(defaultValue:false, description: "Enable service?", name: "myBool")
     }
-
     stages {
         stage ("demo"){
             steps{
-                echo("Hello ${greet}")
+                echo "Hello ${greet}"
                 echo "Param for boolean variable is set to : ${myBool}"
             }
         }
