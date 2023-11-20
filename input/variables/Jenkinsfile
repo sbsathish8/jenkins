@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ("demo"){
             steps{
-                echo "Hello ${greet}"
+                echo "Welcome ${greet}"
                 echo "Current build number : ${env.BUILD_NUMBER}"
             }
         }
