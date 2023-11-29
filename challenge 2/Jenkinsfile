@@ -23,7 +23,7 @@ pipeline {
         }
         stage("stage 6") {
             steps {
-                echo "This stage 5 is missing."
+                echo "This stage 5 is missing.trigger check"
             }
         }
     }
