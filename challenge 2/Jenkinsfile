@@ -21,9 +21,9 @@ pipeline {
                 echo "This is stage 4"
             }
         }
-        stage("stage 5") {
+        stage("stage 6") {
             steps {
-                echo "This is stage 5"
+                echo "This is stage 6, stage 5 is missing for hooks checking"
             }
         }
     }
