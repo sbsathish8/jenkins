@@ -21,9 +21,9 @@ pipeline {
                 echo "This is stage 4"
             }
         }
-        stage("stage 6") {
+        stage("stage 5") {
             steps {
-                echo "Stage 5 is missing.trigger check"
+                echo "Stage 6 deleted for hooks trigger check"
             }
         }
     }
