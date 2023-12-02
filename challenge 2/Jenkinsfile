@@ -23,7 +23,7 @@ pipeline {
         }
         stage("stage 5") {
             steps {
-                echo "Stage 6 deleted for hooks trigger check along with jenkins token updated"
+                echo "Stage 6 deleted for hooks trigger check along with jenkins token updated properly"
             }
         }
     }
